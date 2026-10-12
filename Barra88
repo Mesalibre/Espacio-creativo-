@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Barra 88 | Criolla & Fusión - Sechura</title>
+
+  <meta name="description" content="Descubre Barra 88 Criolla & Fusión en Sechura. Disfruta makis, parrillas y alitas. ¡Haz tu pedido por WhatsApp!">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#d4a017',
+            dark: '#0b0b0b',
+            wood: '#352116'
+          },
+          fontFamily: {
+            display: ['Georgia', 'serif'],
+            sans: ['Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+
+    .hero-bg {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.92) 0%,
+          rgba(0, 0, 0, 0.73) 50%,
+          rgba(0, 0, 0, 0.35) 100%
+        ),
+        url('https://images.unsplash.com/photo-1579871494447-9811cf80d66a?auto=format&fit=crop&w=2000&q=85')
+        center/cover no-repeat;
+    }
+
+    .wood-bg {
+      background:
+        linear-gradient(rgba(25, 15, 9, 0.90), rgba(25, 15, 9, 0.95)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80')
+        center/cover;
+    }
+
+    .gold-border {
+      border: 1px solid rgba(212, 160, 23, 0.35);
+    }
+
+    .menu-card {
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-7px);
+      border-color: #d4a017;
+    }
+
+    .gold-text {
+      color: #d4a017;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 65px;
+      height: 3px;
+      background: #d4a017;
+      margin: 14px auto 0;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 100;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25D366;
+      box-shadow: 0 5px 25px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    .whatsapp-float svg {
+      width: 34px;
+      height: 34px;
+      fill: white;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/95 border-b border-yellow-600/30 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Barra 88, inicio">
+        <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center">
+          <span class="font-display text-2xl font-bold gold-text">88</span>
+        </div>
+
+        <div>
+          <div class="text-xl font-bold tracking-widest">
+            BARRA <span class="gold-text">88</span>
+          </div>
+          <div class="text-[9px] sm:text-[10px] uppercase tracking-[2px] text-gray-400">
+            Criolla & Fusión
+          </div>
+        </div>
+      </a>
+
+      <!-- NAVIGATION -->
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#inicio" class="hover:text-gold transition">Inicio</a>
+        <a href="#carta" class="hover:text-gold transition">Nuestra carta</a>
+        <a href="#horarios" class="hover:text-gold transition">Horarios</a>
+        <a href="#contacto" class="hover:text-gold transition">Contacto</a>
+      </nav>
+
+      <!-- WHATSAPP HEADER -->
+      <a
+        href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20hacer%20un%20pedido."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-gold text-black font-bold px-4 py-3 rounded-full text-xs sm:text-sm hover:bg-yellow-400 transition"
+      >
+        <span class="hidden sm:inline">PIDE POR </span>WHATSAPP
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-bg min-h-[90vh] md:min-h-screen flex items-center pt-24">
+
+    <div class="max-w-7xl mx-auto px-6 py-20 w-full">
+
+      <div class="max-w-2xl">
+
+        <div class="inline-flex items-center gap-2 border border-gold/60 rounded-full px-4 py-2 mb-6">
+          <span class="w-2 h-2 rounded-full bg-gold"></span>
+          <span class="text-xs sm:text-sm uppercase tracking-[3px] gold-text">
+            El sabor de Sechura
+          </span>
+        </div>
+
+        <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
+          SABOR QUE<br>
+          TE <span class="gold-text italic">CONQUISTA</span>
+        </h1>
+
+        <p class="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl mb-9">
+          Una experiencia que mezcla lo mejor de la cocina criolla
+          y la fusión. Makis, parrillas y alitas preparados para
+          conquistar tu paladar.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+
+          <a
+            href="#carta"
+            class="bg-gold text-black font-bold px-8 py-4 rounded-full text-center hover:bg-yellow-400 transition"
+          >
+            DESCUBRE NUESTRA CARTA
+          </a>
+
+          <a
+            href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20hacer%20un%20pedido."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-white/50 px-8 py-4 rounded-full text-center font-bold hover:bg-white hover:text-black transition"
+          >
+            PEDIR POR WHATSAPP ↗
+          </a>
+
+        </div>
+
+        <div class="flex flex-wrap gap-6 sm:gap-10 mt-12 text-sm text-gray-300">
+
+          <div>
+            <div class="gold-text text-2xl mb-1">01</div>
+            <div>Makis</div>
+          </div>
+
+          <div>
+            <div class="gold-text text-2xl mb-1">02</div>
+            <div>Parrillas</div>
+          </div>
+
+          <div>
+            <div class="gold-text text-2xl mb-1">03</div>
+            <div>Alitas</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INTRODUCTION -->
+  <section class="py-16 md:py-20 px-6 bg-black text-center">
+
+    <div class="max-w-3xl mx-auto">
+
+      <p class="uppercase tracking-[4px] text-xs gold-text mb-4">
+        Más que una comida
+      </p>
+
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl mb-6">
+        UNA EXPERIENCIA <span class="gold-text italic">IRRESISTIBLE</span>
+      </h2>
+
+      <p class="text-gray-400 leading-relaxed text-base md:text-lg">
+        En Barra 88 celebramos los buenos momentos con sabores
+        únicos, combinaciones especiales y platos preparados
+        para compartir. Tú eliges el antojo, nosotros ponemos
+        el sabor.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU -->
+  <section id="carta" class="wood-bg py-20 md:py-28 px-5">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14">
+
+        <p class="gold-text uppercase tracking-[4px] text-xs mb-4">
+          Nuestra selección
+        </p>
+
+        <h2 class="section-title font-display text-4xl sm:text-5xl font-bold">
+          TENTACIONES <span class="gold-text italic">BARRA 88</span>
+        </h2>
+
+        <p class="text-gray-400 mt-7 max-w-xl mx-auto">
+          Elige tu favorito y escríbenos por WhatsApp para consultar
+          la carta y realizar tu pedido.
+        </p>
+
+      </div>
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+        <!-- MAKIS -->
+        <article class="menu-card bg-black/80 rounded-2xl overflow-hidden gold-border">
+
+          <div class="relative h-64 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1579871494447-9811cf80d66a?auto=format&fit=crop&w=900&q=85"
+              alt="Makis y sushi servidos en una presentación especial"
+              loading="lazy"
+              class="w-full h-full object-cover hover:scale-110 transition duration-700"
+            >
+
+            <div class="absolute top-4 left-4 bg-gold text-black text-xs font-bold px-4 py-2 rounded-full">
+              FAVORITOS
+            </div>
+
+          </div>
+
+          <div class="p-6">
+
+            <p class="gold-text uppercase tracking-[3px] text-xs mb-2">
+              Fusión japonesa
+            </p>
+
+            <h3 class="font-display text-3xl mb-3">MAKIS</h3>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Una explosión de sabor en cada bocado.
+              Descubre nuestras combinaciones y presentaciones.
+            </p>
+
+            <a
+              href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20ver%20la%20carta%20de%20makis."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block text-center border border-gold text-gold font-bold py-3 rounded-full hover:bg-gold hover:text-black transition"
+            >
+              QUIERO MAKIS ↗
+            </a>
+
+          </div>
+        </article>
+
+
+        <!-- PARRILLAS -->
+        <article class="menu-card bg-black/80 rounded-2xl overflow-hidden gold-border">
+
+          <div class="relative h-64 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+              alt="Carnes a la parrilla preparadas para disfrutar"
+              loading="lazy"
+              class="w-full h-full object-cover hover:scale-110 transition duration-700"
+            >
+
+            <div class="absolute top-4 left-4 bg-black/80 border border-gold text-gold text-xs font-bold px-4 py-2 rounded-full">
+              A LA PARRILLA
+            </div>
+
+          </div>
+
+          <div class="p-6">
+
+            <p class="gold-text uppercase tracking-[3px] text-xs mb-2">
+              Tradición y sabor
+            </p>
+
+            <h3 class="font-display text-3xl mb-3">PARRILLAS</h3>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+              El irresistible sabor de la parrilla para
+              disfrutar una comida llena de carácter.
+            </p>
+
+            <a
+              href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20ver%20la%20carta%20de%20parrillas."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block text-center border border-gold text-gold font-bold py-3 rounded-full hover:bg-gold hover:text-black transition"
+            >
+              QUIERO PARRILLA ↗
+            </a>
+
+          </div>
+        </article>
+
+
+        <!-- ALITAS -->
+        <article class="menu-card bg-black/80 rounded-2xl overflow-hidden gold-border">
+
+          <div class="relative h-64 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=85"
+              alt="Alitas de pollo doradas y apetitosas"
+              loading="lazy"
+              class="w-full h-full object-cover hover:scale-110 transition duration-700"
+            >
+
+            <div class="absolute top-4 left-4 bg-black/80 border border-gold text-gold text-xs font-bold px-4 py-2 rounded-full">
+              PARA COMPARTIR
+            </div>
+
+          </div>
+
+          <div class="p-6">
+
+            <p class="gold-text uppercase tracking-[3px] text-xs mb-2">
+              Puro antojo
+            </p>
+
+            <h3 class="font-display text-3xl mb-3">ALITAS</h3>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Perfectas para compartir con amigos,
+              disfrutar en casa o darte un gusto especial.
+            </p>
+
+            <a
+              href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20ver%20la%20carta%20de%20alitas."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block text-center border border-gold text-gold font-bold py-3 rounded-full hover:bg-gold hover:text-black transition"
+            >
+              QUIERO ALITAS ↗
+            </a>
+
+          </div>
+        </article>
+
+      </div>
+
+
+      <div class="text-center mt-12">
+
+        <a
+          href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20%C2%BFme%20pueden%20compartir%20su%20carta%20completa%20y%20precios%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-gold text-black font-bold px-8 py-4 rounded-full hover:bg-yellow-400 transition"
+        >
+          CONSULTAR CARTA COMPLETA
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BANNER HORARIOS -->
+  <section id="horarios" class="bg-gold text-black py-16 md:py-20 px-6">
+
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-10">
+
+        <p class="uppercase tracking-[4px] text-xs font-bold mb-4">
+          Organiza tu visita
+        </p>
+
+        <h2 class="font-display text-4xl sm:text-5xl font-bold">
+          ¡TE ESPERAMOS!
+        </h2>
+
+        <p class="mt-4 text-black/80">
+          Revisa nuestros horarios antes de hacer tu pedido.
+        </p>
+
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-black text-white p-7 sm:p-9 rounded-2xl">
+
+          <div class="text-gold text-3xl mb-4">01</div>
+
+          <h3 class="font-display text-2xl sm:text-3xl mb-4">
+            LUNES Y MIÉRCOLES
+          </h3>
+
+          <div class="h-px bg-gold/40 mb-4"></div>
+
+          <p class="text-gold text-xl font-bold mb-2">
+            TODO DELIVERY
+          </p>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Pide desde casa y consulta la disponibilidad de
+            nuestros productos y el servicio de reparto por WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="bg-black text-white p-7 sm:p-9 rounded-2xl">
+
+          <div class="text-gold text-3xl mb-4">02</div>
+
+          <h3 class="font-display text-2xl sm:text-3xl mb-4">
+            JUEVES A DOMINGO
+          </h3>
+
+          <div class="h-px bg-gold/40 mb-4"></div>
+
+          <p class="text-gold text-xl font-bold mb-2">
+            DESDE LAS 7:00 PM
+          </p>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Te esperamos en nuestro local para disfrutar
+            de nuestra propuesta criolla y fusión.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="text-center mt-9">
+
+        <a
+          href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quisiera%20consultar%20los%20horarios%20y%20la%20disponibilidad."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-black text-gold font-bold px-8 py-4 rounded-full hover:bg-gray-900 transition"
+        >
+          CONSULTAR DISPONIBILIDAD ↗
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 md:py-28 px-6 bg-black">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <div>
+
+        <p class="gold-text uppercase tracking-[4px] text-xs mb-4">
+          Estamos en Sechura
+        </p>
+
+        <h2 class="font-display text-4xl sm:text-5xl font-bold mb-6">
+          VEN A VIVIR<br>
+          <span class="gold-text italic">EL SABOR</span>
+        </h2>
+
+        <p class="text-gray-400 leading-relaxed mb-8">
+          ¿Tienes hambre? Escríbenos, consulta nuestra carta
+          y disfruta de Barra 88.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Calle+Buenos+Aires+214+Sechura"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-gold text-black font-bold px-7 py-4 rounded-full hover:bg-yellow-400 transition"
+        >
+          CÓMO LLEGAR ↗
+        </a>
+
+      </div>
+
+
+      <div class="bg-[#17120e] border border-gold/30 rounded-2xl p-7 sm:p-9">
+
+        <h3 class="font-display text-3xl mb-7">
+          CONTACTO <span class="gold-text">& UBICACIÓN</span>
+        </h3>
+
+        <div class="space-y-7">
+
+          <div class="flex gap-4 items-start">
+
+            <div class="text-gold text-2xl">⌖</div>
+
+            <div>
+              <p class="font-bold mb-1">Nuestra dirección</p>
+              <p class="text-gray-400 text-sm">
+                Calle Buenos Aires 214, Sechura
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4 items-start">
+
+            <div class="text-gold text-2xl">☎</div>
+
+            <div>
+              <p class="font-bold mb-1">Teléfonos</p>
+
+              <a href="tel:+51906105993" class="block text-gray-400 text-sm hover:text-gold transition">
+                +51 906 105 993
+              </a>
+
+              <a href="tel:+51945447201" class="block text-gray-400 text-sm hover:text-gold transition">
+                +51 945 447 201
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4 items-start">
+
+            <div class="text-gold text-2xl">◎</div>
+
+            <div>
+              <p class="font-bold mb-1">Síguenos en Instagram</p>
+
+              <a
+                href="https://www.instagram.com/barra88cocinafusion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 text-sm hover:text-gold transition"
+              >
+                @barra88cocinafusion ↗
+              </a>
+
+              <p class="text-gray-500 text-xs mt-2">
+                212 publicaciones
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4 items-start">
+
+            <div class="text-gold text-2xl">◷</div>
+
+            <div>
+              <p class="font-bold mb-1">Horario de atención</p>
+              <p class="text-gray-400 text-sm">
+                Lunes y miércoles: todo delivery.
+              </p>
+              <p class="text-gray-400 text-sm">
+                Jueves a domingo: local desde las 7:00 PM.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/51906105993?text=Hola%20Barra%2088%2C%20quiero%20hacer%20una%20consulta."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block text-center mt-8 bg-[#25D366] text-black font-bold py-4 rounded-full hover:bg-green-400 transition"
+        >
+          ESCRÍBENOS POR WHATSAPP
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- INSTAGRAM BANNER -->
+  <section class="border-y border-gold/30 py-12 px-6 text-center">
+
+    <p class="gold-text uppercase tracking-[4px] text-xs mb-4">
+      Síguenos y descubre más
+    </p>
+
+    <h2 class="font-display text-3xl sm:text-4xl mb-5">
+      EL SABOR TAMBIÉN SE <span class="gold-text italic">COMPARTE</span>
+    </h2>
+
+    <a
+      href="https://www.instagram.com/barra88cocinafusion/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block border border-gold text-gold font-bold px-8 py-3 rounded-full hover:bg-gold hover:text-black transition"
+    >
+      @BARRA88COCINAFUSION ↗
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-black px-6 pt-12 pb-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
+
+        <a href="#inicio" class="flex items-center gap-3">
+
+          <div class="w-14 h-14 rounded-full border-2 border-gold flex items-center justify-center">
+            <span class="font-display text-3xl font-bold gold-text">88</span>
+          </div>
+
+          <div>
+            <div class="text-2xl font-bold tracking-widest">
+              BARRA <span class="gold-text">88</span>
+            </div>
+            <div class="text-xs uppercase tracking-[3px] text-gr
